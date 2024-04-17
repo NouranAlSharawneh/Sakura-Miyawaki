@@ -7,3 +7,43 @@ body {
 h1 {
   font-family: var(--secondary-font);
 }
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "mainImage mainImage mainImage navBar navBar navBar"
+    "mainImage mainImage mainImage personalOne personalOne personalTwo"
+    "mainImage mainImage mainImage signature personalThree personalThree"
+    "mainImage mainImage mainImage activeGroup activeGroup activeGroup";
+}
+
+.hero--section img {
+  grid-area: mainImage;
+  width: 15em;
+}
+
+.nav--bar {
+  grid-area: navBar;
+}
+
+.personal--info {
+  grid-area: personalOne;
+}
+.personal--info--2 {
+  grid-area: personalTwo;
+}
+
+.signature--area {
+  grid-area: signature;
+}
+
+.personal--info--3 {
+  grid-area: personalThree;
+}
+
+.active--group {
+  grid-area: activeGroup;
+}
