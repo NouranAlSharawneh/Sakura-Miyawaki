@@ -8,10 +8,14 @@ h1 {
   font-family: var(--secondary-font);
 }
 
-.container {
+section {
   height: 100vh;
+}
+
+.container {
+  height: 90vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr 0.5fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "mainImage mainImage mainImage navBar navBar navBar"
@@ -20,9 +24,19 @@ h1 {
     "mainImage mainImage mainImage activeGroup activeGroup activeGroup";
 }
 
-.hero--section img {
+.hero--image {
   grid-area: mainImage;
-  width: 15em;
+  background-image: url(../public/assets/heroImage.png);
+  background-size: 47em;
+  background-repeat: no-repeat;
+}
+
+ul {
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
 }
 
 .nav--bar {
